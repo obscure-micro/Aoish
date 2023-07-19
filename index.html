@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fashion Site - Coming Soon</title>
+  <title>Aoish Trendy Fashion</title>
   <style>
     body {
-      background-color: #e6c8cd;
-      color: rgb(102, 35, 179);
+      background-color: #c585a6;
+      color: #ffffff;
       font-family: Arial, sans-serif;
       text-align: center;
       margin: 0;
@@ -17,14 +17,21 @@
       animation: pulse 1s infinite;
     }
     p {
+      
       font-size: 18px;
+      animation: wordDrop 9s linear;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #6963a8;
+      width: 0;
+      margin: 0 auto;
     }
     .logo {
       width: 150px;
       height: 150px;
       margin-bottom: 30px;
     }
-    
+   
     @keyframes pulse {
       0% {
         transform: scale(1);
@@ -36,11 +43,35 @@
         transform: scale(1);
       }
     }
+    
+    @keyframes wordDrop {
+      0% {
+        width: 0;
+      }
+      25% {
+        width: 00px; /* Adjust the width as needed */
+      }
+      50% {
+        width: 700px;
+      }
+      75% {
+        width: 700px;
+      }
+      100% {
+        width: 0;
+      }
+    }
+    p {
+      animation-iteration-count: infinite;
+      animation-duration: 10s; /* Adjust the duration as needed */
+      animation-timing-function: linear; 
+    }
   </style>
+  <meta name="description" content="Discover the latest trends in women's trendy jewelry. Explore our collection of fashionable and stylish jewelry for ladies. From statement necklaces to delicate bracelets, find the perfect pieces to elevate your style. Shop now for the hottest jewelry trends.">
 </head>
 <body>
   <img class="logo" src="logo-aoish.jpg" alt="AIOSH Site Logo">
   <h1>AIOSH - <span class="coming-soon">Coming Soon</span></h1>
-  <p>We're working on something stylish. Stay tuned for the latest trends in fashion!</p>
+  <p text-color="">We're working on something stylish. Stay tuned for the latest trends in fashion!</p>
 </body>
 </html>
