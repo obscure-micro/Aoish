@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coming Soon</title>
+  <title>Fashion Site - Coming Soon</title>
   <style>
     body {
+      background-color: #e6c8cd;
+      color: rgb(102, 35, 179);
       font-family: Arial, sans-serif;
       text-align: center;
       margin: 0;
@@ -12,15 +14,33 @@
     h1 {
       font-size: 36px;
       margin-bottom: 20px;
+      animation: pulse 1s infinite;
     }
     p {
       font-size: 18px;
     }
+    .logo {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 30px;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <p>We're working on something awesome. Stay tuned!</p>
+  <img class="logo" src="logo-aoish.jpg" alt="AIOSH Site Logo">
+  <h1>AIOSH - <span class="coming-soon">Coming Soon</span></h1>
+  <p>We're working on something stylish. Stay tuned for the latest trends in fashion!</p>
 </body>
 </html>
-
